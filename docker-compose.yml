@@ -25,17 +25,6 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
 
-  localstack:
-    image: localstack/localstack:3.5
-    environment:
-      - SERVICES=sqs
-      - DEFAULT_REGION=us-east-1
-      - AWS_DEFAULT_REGION=us-east-1
-      - DEBUG=1
-      - DATA_DIR=/tmp/localstack/data
-    ports:
-      - "4566:4566"
-      - "4510-4559:4510-4559"
 
 volumes:
   db_data:
