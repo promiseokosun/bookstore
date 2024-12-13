@@ -24,3 +24,7 @@ Book-Store is a micro-service REST api application. It's a solution for managing
 - postgres database
 - spring boot
 - java
+
+
+## Entity Diagram
+- See *entity-diagram.png* entity diagram
